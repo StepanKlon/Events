@@ -23,3 +23,19 @@ $("#thirdButton").click(() => {
         }
     
 })
+let u = 1;
+let colorBefore;
+
+$("#thirdButton").click(() => {
+  
+    if (u === 1) {
+        let color = $("#colorInput").val();
+        colorBefore = color
+        $("button").css("background-color",color);
+        u++;
+    } else {
+        $("button").css("background-color",colorBefore);
+        u++;
+    }
+    
+})
